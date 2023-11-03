@@ -10,7 +10,6 @@ interface Props {
 const CreateBurger: React.FC<Props> = (props) => {
   const addRecipe = [];
 
-  if (props.ingredients[props.index].count > 0) {
     const recipe = props.ingredients[props.index].name;
 
     for (let i = 0; i < props.ingredients[props.index].count; i++) {
@@ -22,8 +21,6 @@ const CreateBurger: React.FC<Props> = (props) => {
         }
       }
     }
-  }
-
   return addRecipe;
 };
 
